@@ -1,0 +1,166 @@
+/* Basic */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* HEADER */
+/* Menu */
+#header {
+  background-color: #F2F3F6;
+  padding-bottom: 56.5px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Все элементы меню имеют правый марджин кроме последнего! */
+.menu-nav {
+  margin: 0 auto;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.menu-link {
+  color: #111238;
+  text-decoration: none;
+}
+
+/* Кнопки */
+.button {
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+}
+
+.button-link {
+  color: #111238;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.button-primary {
+  background-color: #1A75E8;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 15px 30px;
+  color: white;
+}
+
+/* Hero Block */
+.hero-block {
+  margin-top: 75px;
+}
+
+.hero-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 53px;
+  margin-bottom: 15px;
+  margin-top: 43px;
+}
+
+.hero-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 30px;
+}
+
+/* Поле поиска */
+.input-group {
+  background-color: #FFFFFF;
+  border: 1px none rgba(209, 209, 209, 0.1);
+  box-shadow: 0 4px 25px rgba(15, 17, 56, 0.1);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+.input {
+  background-color: white;
+  border: none;
+  flex-grow: 1;
+  padding-left: 15px;
+}
+
+.input:focus {
+  outline: 1px dotted #B2B2B2;
+}
+
+.button-icon {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.button-text {
+  vertical-align: middle;
+}
+
+/* Теги для поиска */
+.tags-group {
+  padding-left: 15px;
+  color: #B2B2B2;
+  height: 17px;
+}
+
+.tag {
+  color: #B2B2B2;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: 1px solid #B2B2B2;
+  border-radius: 5px;
+}
+
+/* Cards */
+
+#Cards {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+.Cards-title {
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.card {
+  text-decoration: none;
+  color: #111238;
+  background: #F2F3F6;
+  border-radius: 10px;
+  padding: 35px;
+  border: none;
+  transition: background 0.2s;
+}
+
+.card:hover {
+  background-color: #1A75E8;
+  color: white;
+  fill: white;
+}
+
+.card:hover .card-icon {
+  fill: #fff;
+}
+
+.card-icon {
+  fill: #111238;
+  margin-bottom: 15px;
+  transition: fill 0.2s;
+}
